@@ -1,0 +1,22 @@
+{
+  "name": "ryanhome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryan9206/RyanHome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryan9206/RyanHome/issues"
+  },
+  "homepage": "https://github.com/ryan9206/RyanHome#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
