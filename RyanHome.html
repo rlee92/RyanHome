@@ -8,47 +8,112 @@
 
     <title>Ryan Lee</title>
 
-    <!-- Bootstrap -->
-    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="browser_components/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function(){
+        $('#link').load('contents/link.html')
+        $('#header').load('contents/header.html');
+      });
+    </script>
+    <div id='link'></div>
 
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
 
   </head>
   <body>
-    <header class = "jumbotron text-center">
-      <div class="container">
-        <div class="">
-          <img src="https://avatars0.githubusercontent.com/u/10622854?v=3&s=460" alt="Ryan Lee" class ='img-circle'id=img>
-        </div>
-        <div class="">
-          <h1><a href="/"> RYAN LEE</a></h1>
-          <h3>Recently Graduated Software developer</h3>
-        </div>
-      </div>
-    </header>
+    <div id='header'></div>
 
-    <h4>Hello, My name is Ryan Lee. I am a recent graduate from University of British Columbia.</h4>
+    <h4 id='intro'>Hello, My name is Ryan Lee. I am a recent graduate from University of British Columbia.</h4>
+
     <section>
+      <h3 id='skills'> Languages </h3>
       <blockquote>
-        <table>
-          <tr>
-            <td>Email
-            <td><a href="mailto:r.lee9206@gmail.com">r.lee9206@gmail.com</a>
-          </tr>
-          <tr>
-            <td>GitHub
-            <td><a href="https://github.com/ryan9206">https://github.com/ryan9206</a>
-          </tr>
-          <tr>
-            <td>Resume
-            <td><a href="https://www.dropbox.com/s/xs50txltc11kjrc/Ryan%20Lee%20-%20Resume.pdf?dl=0">Resume</a>
-          </tr>
-          <tr>
-            <td>LinkedIn
-            <td><a href="https://linkedin.com/in/ryan9206">https://linkedin.com/in/ryan9206</a>
-          </tr>
-        </table>
+      <ul>
+        <li>Strong: Java, JavaScript</li>
+        <li>Knowledgeable: Python, C/C++</li>
+      </ul>
+      </blockquote>
+      <h3 id='skills'> Technologies </h3>
+      <blockquote>
+      <ul>
+        <li> Strong: React-Native </li>
+        <li> Knowledgeable: Node.js, MySQL </li>
+      </ul>
+      </blockquote>
+
+    </section>
+
+    <section>
+        <h2>Personal Projects</h2>
+      <br>
+      <blockquote>
+
+
+      <div class="">
+        <article class="">
+          <h4>
+            <i class="fa fa-android fa-2x" aria-hidden="true"></i>
+            <a href="https://github.com/ryan9206/swapem2">
+              Swap'em (Android)
+            </a>
+          </h4>
+          <p>
+            A contact exchange app with an intuitive user interface for Android
+          </p>
+          <footer>
+            <a href="/swapem2">Read more →</a>
+          </footer>
+        </article>
+
+        <article class="">
+          <h4>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <a href="https://github.com/ryan9206/Contact">
+              Address Book
+            </a>
+          </h4>
+          <p>
+            Users add, delete, or search contact information and save it as a text file
+          </p>
+          <footer>
+            <a href="/contact">Read more →</a>
+          </footer>
+        </article>
+      </div>
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>Academic Projects</h2>
+      <br>
+      <blockquote>
+        <div class="">
+          <article class="">
+            <h4>
+              <i class="fa fa-apple" aria-hidden="true"></i>
+              <a href="https://github.com/ryan9206/Swapem-cs410"> Swap'em (iOS) </a>
+            </h4>
+            <p>
+              A contact exchange app with an intuitive user interface for Android
+            </p>
+            <footer>
+              <a href="/swapem1">Read more →</a>
+            </footer>
+          </article>
+
+          <article class="">
+            <h4>
+              <i class="fa fa-cutlery" aria-hidden="true"></i>
+              <a href="https://github.com/ryan9206/FoodVendorTracker-cs310"> Food Vendor Tracker </a>
+            </h4>
+            <p>
+              A web app that provides information of food trucks and its location in Vancouver downtown
+            </p>
+            <footer>
+              <a href="/fvt">Read more →</a>
+            </footer>
+          </article>
+        </div>
       </blockquote>
     </section>
 
