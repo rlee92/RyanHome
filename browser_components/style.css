@@ -1,0 +1,72 @@
+/* Colors
+- Lapis Blue:       #004B8D
+- Island Paradise:  #95DEE3
+*/
+a,h1 {
+  color: #004B8D;
+}
+h3 {
+  margin-top: 0px;
+}
+h1.contactMe {
+  text-align: center;
+}
+body {
+  font-family: 'Oxygen', sans-serif;
+  background-color: white;
+}
+img {
+  width:   100px;
+  height:  100px;
+}
+#intro {
+  text-align: center;
+}
+#skills {
+  text-align: inherit;
+}
+body>section {
+  max-width: 720px;
+  margin: 40px auto;
+}
+h2 {
+  margin-left: 5px;
+}
+blockquote{
+
+  margin-left: 10px;
+}
+
+td{
+  align-items: center;
+}
+a {
+
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: none;
+
+  color: #95DEE3;
+}
+article .content-container {
+  flex-grow: 10000;
+}
+i {
+  /*color: #004B8D*/
+}
+article .personalPJT {
+  border-color: red;
+  border-width: 3px;
+}
+#footer {
+  text-align: center;
+}
+
+/*i.summary-icon {
+  font-size: 40px;
+  width: 100px;
+  margin-top: 35px;
+  text-align: center;
+  flex-shrink: 0;
+}*/

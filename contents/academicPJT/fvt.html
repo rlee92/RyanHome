@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <script src="browser_components/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function(){
+        $('#link').load('contents/link.html')
+        $('#header').load('contents/header.html')
+        $('#footer').load('contents/footer.html')
+      });
+    </script>
+    <div id='link'></div>
+
+    <title>Ryan Lee</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <section>
+      <h1>Food Vendor Tracker <small>for web</small></h1>
+
+      <article class="">
+        <h4>Location and information about food trucks in Vancouver downtown</h4>
+        <h4>
+          <a href="http://1-dot-vanfoodtrucks.appspot.com/">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          Demonstration
+          </a>
+        </h4>
+        <br>
+        <p>
+          Built with: Java, Google Web Toolkit
+        </p>
+
+        <p>
+          <ul>
+            <li>A User can visualize locations of food trucks via implemented Google map.</li>
+            <li>A User can create a favourite list by saving vendors and share their list via Google authentication</li>
+          </ul>
+          <br>
+          Developed front-end features:
+          <ul>
+            <li>Integrated with Google Map API to display each truck’s location on a map </li>
+            <li>Integrated with Facebook API to allow users to share the app on Facebook </li>
+          </ul>
+        </p>
+      </article>
+      <h4>
+        <i class="fa fa-code-fork" aria-hidden="true"></i>
+        <a href="https://github.com/ryan9206/FoodVendorTracker-cs310">source code</a>
+      </h4>
+    </section>
+    <div id='footer'></div>
+  </body>
+</html>

@@ -2,32 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- <script src="https://www.w3schools.com/lib/w3.js"></script> -->
+
     <script src="browser_components/jquery-3.2.1.min.js"></script>
     <script>
       $(function(){
         $('#link').load('contents/link.html')
-        $('#header').load('contents/header.html');
+        $('#header').load('contents/header.html')
+        $('#footer').load('contents/footer.html')
       });
     </script>
     <div id='link'></div>
 
-
-
-
-    <title></title>
+    <title>Ryan Lee</title>
   </head>
   <body>
-    <!-- <div>
-      <?php
-        include "header.php";
-      ?>
-    </div> -->
-    <!-- <div w3-include-html="/header.html"></div>
-    <script>
-      w3.includeHTML();
-    </script> -->
     <div id="header"></div>
-    WHY THE F is not working
+    <section>
+      <h1>Swap'em <small>for iOS</small></h1>
+
+      <article class="">
+        <h4>Swap'em simplifies the process of exchaningc contact information small</h4>
+        <h4>
+          <a href="https://goo.gl/xOBqvI">
+          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          Demonstration Video
+          </a>
+        </h4>
+        <br>
+        <p>
+          Built with: JavaScript, React-Native, Xcode
+        </p>
+
+        <p>
+          <ul>
+            <li>A mobile app that simplifies the contact exchanging process with nearby users</li>
+            <li>Each profiles are customizable and users can select which information they would like share</li>
+            <li>Received contacts can be remained in app or imported into native contact app</li>
+          </ul>
+          <br>
+          Developed front-end features:
+          <ul>
+            <li>Contributed profile creation page and profile page</li>
+            <li>Contributed to add a map that shows where the users exchanged each contact information</li>
+            <li>Integrated with Facebook API to display a user's Facebook URL on profile page in app</li>
+          </ul>
+        </p>
+      </article>
+      <h4>
+        <i class="fa fa-code-fork" aria-hidden="true"></i>
+        <a href="https://github.com/ryan9206/Swapem-cs410">source code</a>
+      </h4>
+    </section>
+    <div id='footer'></div>
   </body>
 </html>
