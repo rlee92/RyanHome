@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="../browser_components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../browser_components/style.css">
-    <link rel="stylesheet" href="../browser_components/font-awesome/css/font-awesome.min.css">
+    <link href="../../browser_components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../browser_components/style.css">
+    <link rel="stylesheet" href="../../browser_components/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico" />
 
-    <script src="browser_components/jquery-3.2.1.min.js"></script>
+    <script src="../../browser_components/jquery-3.2.1.min.js"></script>
     <script>
       $(function(){
         // $('#link').load('contents/link.html')
-        $('#header').load('contents/header.html')
-        $('#footer').load('contents/footer.html')
+        $('#header').load('../header.html')
+        $('#footer').load('../footer.html')
       });
     </script>
     <div id='link'></div>
@@ -23,43 +24,45 @@
     <title>Ryan Lee</title>
   </head>
   <body>
-    <div id="header"></div>
-    <section>
-      <h1>Swap'em <small>for iOS</small></h1>
+    <div class="container">
+      <div id="header"></div>
+      <section>
+        <h1>Swap'em <small>for iOS</small></h1>
 
-      <article class="">
-        <h4>Swap'em simplifies the process of exchaningc contact information small</h4>
-        <h4>
-          <a href="https://goo.gl/xOBqvI">
-          <i class="fa fa-youtube-play" aria-hidden="true"></i>
-          Demonstration Video
-          </a>
-        </h4>
-        <br>
-        <p>
-          Built with: JavaScript, React-Native, Xcode
-        </p>
-
-        <p>
-          <ul>
-            <li>A mobile app that simplifies the contact exchanging process with nearby users</li>
-            <li>Each profiles are customizable and users can select which information they would like share</li>
-            <li>Received contacts can be remained in app or imported into native contact app</li>
-          </ul>
+        <article class="">
+          <h4>Swap'em simplifies the process of exchaningc contact information small</h4>
+          <h4>
+            <a href="https://goo.gl/xOBqvI">
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            Demonstration Video
+            </a>
+          </h4>
           <br>
-          Developed front-end features:
-          <ul>
-            <li>Contributed profile creation page and profile page</li>
-            <li>Contributed to add a map that shows where the users exchanged each contact information</li>
-            <li>Integrated with Facebook API to display a user's Facebook URL on profile page in app</li>
-          </ul>
-        </p>
-      </article>
-      <h4>
-        <i class="fa fa-code-fork" aria-hidden="true"></i>
-        <a href="https://github.com/ryan9206/Swapem-cs410">source code</a>
-      </h4>
-    </section>
-    <div id='footer'></div>
+          <p>
+            Built with: JavaScript, React-Native, Xcode
+          </p>
+
+          <p>
+            <ul>
+              <li>A mobile app that simplifies the contact exchanging process with nearby users</li>
+              <li>Each profiles are customizable and users can select which information they would like share</li>
+              <li>Received contacts can be remained in app or imported into native contact app</li>
+            </ul>
+            <br>
+            Developed front-end features:
+            <ul>
+              <li>Contributed profile creation page and profile page</li>
+              <li>Contributed to add a map that shows where the users exchanged each contact information</li>
+              <li>Integrated with Facebook API to display a user's Facebook URL on profile page in app</li>
+            </ul>
+          </p>
+        </article>
+        <h4>
+          <i class="fa fa-code-fork" aria-hidden="true"></i>
+          <a href="https://github.com/ryan9206/Swapem-cs410">source code</a>
+        </h4>
+      </section>
+      <div id='footer'></div>
+    </div>
   </body>
 </html>
