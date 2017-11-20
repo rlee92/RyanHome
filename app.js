@@ -16,7 +16,7 @@ app.all(/.+\.php$/, phpExpress.router)
 app.use(express.static(path.join(__dirname, '')))
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname + '/RyanHome.html'))
+  res.sendFile(path.join(__dirname + '/index.html'))
 })
 
 // Personal projects read more routes
