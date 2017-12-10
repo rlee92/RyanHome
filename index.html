@@ -1,141 +1,81 @@
-<!-- <?php
-require("contents/config.php");
-require("contents/db.php");
-$conn = db_init($config["host"], $config["duser"], $config["dpw"], $config["dname"]);
-$result = mysqli_query($conn, "SELECT * FROM topic");
-?> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <link href="../browser_components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../browser_components/style.css">
-    <link rel="stylesheet" href="../browser_components/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<head>
+  <title>Ryan Lee</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Ryan Lee</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-    <script src='../browser_components/jquery-3.2.1.min.js'></script>
-    <script>
-      $(function(){
-        // $('#link').load('contents/link.html')
-        $('#header').load('contents/header.html');
-        $('#footer').load('contents/footer.html');
-      });
-    </script>
-    <div id='link'></div>
-  </head>
+  <!-- Ohter CSS -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link rel="stylesheet" href="../browser_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../browser_components/css/fadeAnimation.css">
+  <link rel="stylesheet" type="text/css" href="../browser_components/css/stickyNav.css">
 
-  <body>
+  <!-- <div id='link'></div> -->
+</head>
+
+<body>
+
+  <div id="homepage" class="animated fadeIn">
     <div class="container">
-      <div id='header'></div>
-
-      <!-- <h4 id='intro'>Hello, My name is Ryan Lee. I am a recent graduate from University of British Columbia.</h4> -->
-      <section>
-        <h2 id='skills'> Languages 	&#38; Technologies </h2>
-        <blockquote>
-          Strong:
-            <ul>
-              <li>Java, JavaScript</li>
-              <li>React-Native </li>
-            </ul>
-          Knowledgeable:
-            <ul>
-              <li>Python, C/C++</li>
-              <li>Node.js, MySQL, HTML, CSS </li>
-            </ul>
-        </blockquote>
-      </section>
-
-      <section>
-          <h2>Personal Projects</h2>
-        <blockquote>
-          <article class="personalPJT">
-            <h3>
-              <i class="fa fa-android" aria-hidden="true"></i>
-              <!-- <a href="https://github.com/ryan9206/swapem2"> -->
-              <a href="/contents/personalPJT/swapem2.html">
-                Swap'em
-              </a>
-            </h3>
-            <h6>for Android </h6>
-            <p>
-              A contact exchange app with an intuitive user interface for Android
-            </p>
-            <footer>
-              <a href="/contents/personalPJT/swapem2.html">Read more →</a>
-            </footer>
-          </article>
-
-          <br>
-
-          <article class="personalPJT">
-            <h3>
-              <i class="fa fa-address-book-o" aria-hidden="true"></i>
-              <!-- <a href="https://github.com/ryan9206/Contact"> -->
-              <a href="/contents/personalPJT/contact.html">
-                Address Book
-              </a>
-            </h3>
-            <p>
-              Users add, delete, or search contact information and save it as a text file
-            </p>
-            <footer>
-              <a href="/contents/personalPJT/contact.html">Read more →</a>
-            </footer>
-          </article>
-        </blockquote>
-      </section>
-
-      <section>
-        <h2>Academic Projects</h2>
-        <blockquote>
-          <article class="academicPJT">
-            <h3>
-              <i class="fa fa-apple" aria-hidden="true"></i>
-              <!-- <a href="https://github.com/ryan9206/Swapem-cs410"> -->
-              <a href="/contents/academicPJT/swapem1.html">
-                Swap'em
-              </a>
-            </h3>
-            <h6>for iOS</h6>
-            <p>
-              A contact exchange app with an intuitive user interface for Android
-            </p>
-            <footer>
-              <a href="/contents/academicPJT/swapem1.html">Read more →</a>
-            </footer>
-          </article>
-
-          <br>
-
-          <article class="academicPJT">
-            <h3>
-              <i class="fa fa-truck" aria-hidden="true"></i>
-              <!-- <a href="https://github.com/ryan9206/FoodVendorTracker-cs310"> -->
-              <a href="/contents/academicPJT/fvt.html">
-                Food Vendor Tracker
-              </a>
-            </h3>
-            <p>
-              A web app that provides information of food trucks and its location in Vancouver downtown
-            </p>
-            <footer>
-              <a href="/contents/academicPJT/fvt.html">Read more →</a>
-            </footer>
-          </article>
-        </blockquote>
-      </section>
-
-      <div id='footer'></div>
+      <div class="home-content">
+        <h4 class="logo animated fadeInDown">Ryan Lee</h4>
+        <p class="lead animated fadeInDown"> Development Support QA </p>
+        <p class="about animated fadeInUp">Recently graduated UBC. I want to be a DevOps </p>
+      </div>
     </div>
-  </body>
+  </div>
+
+  <div class="menu">
+    <ul>
+      <li>
+        <a href="http://www.skippyweb.nl/2017/02/19/animate-page-based-on-the-users-scroll-position/">Who are we</a>
+      </li>
+      <li>
+        <a href="http://www.skippyweb.nl/2017/02/19/animate-page-based-on-the-users-scroll-position/">Pricing</a>
+      </li>
+      <li>
+        <a href="http://www.skippyweb.nl/2017/02/19/animate-page-based-on-the-users-scroll-position/">Team</a>
+      </li>
+      <li>
+        <a href="http://www.skippyweb.nl/2017/02/19/animate-page-based-on-the-users-scroll-position/">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="header">
+    <h1>I am a title</h1>
+  </div>
+
+  <div class="container" style="
+  margin-bottom: 600px">
+    <div class="row">
+      <div class="col-md-12 content">
+        <a href="http://www.skippyweb.nl/2017/02/19/animate-page-based-on-the-users-scroll-position/" target="_blank">There scripts belong to a blogpost on Skippy Web</a>
+        <Br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente laborum error maiores rem, ad, aliquam unde aliquid
+        nesciunt natus consequatur. Minima officiis, cum optio quae? Maxime porro at laboriosam eum.Lorem ipsum dolor sit
+        amet, consectetur
+      </div>
+    </div>
+  </div>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script src='../browser_components/jquery-3.2.1.min.js'></script>
+  <!-- Other Scripts -->
+  <script src='../browser_components/index.js'></script>
+</body>
+
 </html>

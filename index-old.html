@@ -1,0 +1,258 @@
+<!-- <?php
+require("contents/config.php");
+require("contents/db.php");
+$conn = db_init($config["host"], $config["duser"], $config["dpw"], $config["dname"]);
+$result = mysqli_query($conn, "SELECT * FROM topic");
+?> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ryan Lee</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+
+  <!-- Ohter CSS -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link rel="stylesheet" href="../browser_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="../browser_components/style.css">
+
+  <div id='link'></div>
+</head>
+
+<body>
+
+
+
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light justify-content-between">
+    <a class="navbar-brand" href="/">RyanHome</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Experiences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">StudyAids</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+    <div class="jumbotron">
+      <div class="container">
+        <div class="">
+          <!-- <img src="https://avatars1.githubusercontent.com/u/10622854?v=4&u=9647bb0995f8fc4d5dd391c32d31533d1ed16d06&s=400" alt="Ryan Lee" class ='img-circle'id=img> -->
+
+        </div>
+        <div class="">
+          <h1>
+            <a href="/"> RYAN LEE</a>
+          </h1>
+          <h4>Development Support QA - Electronic Arts</h4>
+          <h4>2017 B.Sc - Computer Science at University of British Columbia</h4>
+        </div>
+        <h2 class="contactMe">
+          <a href="contents/RyanLeeResume.pdf" download>
+            <i title='Resume' class="fa fa-file-pdf-o fa-fw" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:r.lee9206@gmail.com">
+            <i title='Email' class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
+          </a>
+          <a href="https://linkedin.com/in/ryan9206">
+            <i title='Linkedin' class="fa fa-linkedin fa-fw" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://github.com/ryan9206">
+            <i title='GitHub' class="fa fa-github fa-fw" aria-hidden="true"></i>
+          </a>
+        </h2>
+      </div>
+    </div>
+  </main>
+
+
+
+  <div class="container">
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="/testimage.jpg" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Personal Website</h3>
+            <p>
+              <a href="https://www.google.com">Learn More</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/testimage.jpg" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Swap'em</h3>
+            <p>
+              <a href="https://www.google.com">Learn More</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/testimage.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Web Crawler </h3>
+            <p>
+              <a href="https://www.google.com">Learn More</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- <h4 id='intro'>Hello, My name is Ryan Lee. I am a recent graduate from University of British Columbia.</h4> -->
+    <section>
+      <h2 id='skills'> Languages &#38; Technologies </h2>
+      <blockquote>
+        Strong:
+        <ul>
+          <li>Java, JavaScript</li>
+          <li>React-Native </li>
+        </ul>
+        Knowledgeable:
+        <ul>
+          <li>Python, C/C++</li>
+          <li>Node.js, MySQL, HTML, CSS </li>
+        </ul>
+      </blockquote>
+    </section>
+
+
+
+    <section>
+      <h2>Personal Projects</h2>
+      <blockquote>
+        <article class="personalPJT">
+          <h3>
+            <i class="fa fa-android" aria-hidden="true"></i>
+            <!-- <a href="https://github.com/ryan9206/swapem2"> -->
+            <a href="/contents/personalPJT/swapem2.html">
+              Swap'em
+            </a>
+          </h3>
+          <h6>for Android </h6>
+          <p>
+            A contact exchange app with an intuitive user interface for Android
+          </p>
+          <footer>
+            <a href="/contents/personalPJT/swapem2.html">Read more →</a>
+          </footer>
+        </article>
+
+        <br>
+
+        <article class="personalPJT">
+          <h3>
+            <i class="fa fa-address-book-o" aria-hidden="true"></i>
+            <!-- <a href="https://github.com/ryan9206/Contact"> -->
+            <a href="/contents/personalPJT/contact.html">
+              Address Book
+            </a>
+          </h3>
+          <p>
+            Users add, delete, or search contact information and save it as a text file
+          </p>
+          <footer>
+            <a href="/contents/personalPJT/contact.html">Read more →</a>
+          </footer>
+        </article>
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>Academic Projects</h2>
+      <blockquote>
+        <article class="academicPJT">
+          <h3>
+            <i class="fa fa-apple" aria-hidden="true"></i>
+            <!-- <a href="https://github.com/ryan9206/Swapem-cs410"> -->
+            <a href="/contents/academicPJT/swapem1.html">
+              Swap'em
+            </a>
+          </h3>
+          <h6>for iOS</h6>
+          <p>
+            A contact exchange app with an intuitive user interface for Android
+          </p>
+          <footer>
+            <a href="/contents/academicPJT/swapem1.html">Read more →</a>
+          </footer>
+        </article>
+
+        <br>
+
+        <article class="academicPJT">
+          <h3>
+            <i class="fa fa-truck" aria-hidden="true"></i>
+            <!-- <a href="https://github.com/ryan9206/FoodVendorTracker-cs310"> -->
+            <a href="/contents/academicPJT/fvt.html">
+              Food Vendor Tracker
+            </a>
+          </h3>
+          <p>
+            A web app that provides information of food trucks and its location in Vancouver downtown
+          </p>
+          <footer>
+            <a href="/contents/academicPJT/fvt.html">Read more →</a>
+          </footer>
+        </article>
+      </blockquote>
+    </section>
+    <div id='footer'></div>
+  </div>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script src='../browser_components/jquery-3.2.1.min.js'></script>
+  <!-- Other Scripts -->
+  <script src='../browser_components/index.js'></script>
+</body>
+
+</html>
